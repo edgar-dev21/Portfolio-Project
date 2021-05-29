@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Math For All</title>
+</head>
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img/mathlogo1.jpg" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <h1>Math For All</h1>
+                    <!-- h2 maybe -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mathNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mathNavbar">
+                <ul class="navbar-nav">
+                    <span class="navbar-text ml-auto">
+                        <a role="button" data-toggle="modal" data-target="#loginModal">
+                            <i class="fa fa-sign-in"></i> Login
+                        </a>
+                    </span>
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+                        
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h3 class="modal-title">Login</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="loginEmail">Email address</label>
+                                <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="loginPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">About</li>
+                </ol>
+                <h2>About Us</h2>
+                <hr />
+            </div>
+        </div>
+
+        
+
+        <div class="row row-content">
+            <div class="col-sm-6">
+                <h3>Our Daily Goal</h3>
+                <p> From the first day our site was founded we wanted to be an invaluable resource to everybody who wanted to know more about Mathematics. Through research of best practices for learning, we have developed a site that will 
+                    motivate and improve attitudes towards the world of Mathematics.
+                </p>
+            </div>
+            
+     
+            <div class="col">
+                <div class="card bg-light mt-3">
+                    <blockquote class="blockquote card-body">
+                        <p class="mb-0">Truth is ever to be found in the simplicity, and not in the multiplicity and confusion of things.</p>
+                        <footer class="blockquote-footer">Isaac Newton
+                            <cite title="Source Title">
+                    
+                            </cite>
+                        </footer>
+                    </blockquote>
+        	    </div>
+            </div>   
+        </div>  
+
+        <div class="col-sm-6">
+            <div class="card">
+                <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-6">Founded</dt>
+                        <dd class="col-6">January 5, 2018</dd>
+                        <dt class="col-6">No. of Tutors in 2020</dt>
+                        <dd class="col-6">1,275</dd>
+                        <dt class="col-6">No. of Reviews in 2020</dt>
+                        <dd class="col-6">12,456</dd>
+                        <dt class="col-6">Employees</dt>
+                        <dd class="col-6">2,381</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col">
+                <h3>National Partners </h3>
+                <div id="accordion">
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a data-toggle="collapse" data-target="#nsf">
+                                National Science Foundation <small><br/> Division of Mathematical Sciences</small>
+                            </a>
+                        </h4>
+                        <div class="collapse show" id="nsf" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Supports research in mathematics and statistics, training through research involvement of the next generation of mathematical scientists, conferences and workshops, and a portfolio of national mathematical sciences research institutes.</p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#maa"> Mathematical Association of America<small><br/>National Research Experience for Undergraduates Program</small>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="maa" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block"> National Research Experience for Undergraduates Program (NREUP) supports the participation of mathematics undergraduates from underrepresented groups in focused and challenging research experiences to increase their interest in advanced degrees and careers in mathematics.  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#nasa">
+                                National Aeronautics and Space Administration<small><br/>NASA STEM Engagement</small>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="nasa" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Sitting in classrooms today are future astronauts who will one day live in a habitat on Mars, as well as scientists who will develop missions to explore distant planets and deep space, and engineers who will design the space vehicles that will enable these feats and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#siam">Society for Industrial and Applied Mathematics<small><br/>Computational Science & Numerical Analysis</small>
+                            </a>
+                        </h4>
+                        <div class="collapse" id="siam" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Research areas include methods and algorithms for scientific computing, covering a wide array of applications, including software and environments for high performance computing as well as numerical analysis. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-sm-9">
+            <h2>Facts &amp; Figures: User Data</h2>
+            <div class="table-responsive">
+            <table class="table table-striped">
+                        <thead>
+                            <tr class="bg-primary text-light">
+                                <th></th>
+                                <th>2018</th>
+                                <th>2019</th>
+                                <th>2020</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-primary">
+                            <tr>
+                                <th>K-12 Students</th>
+                                <td>1,356,189</td>
+                                <td>2,986,546</td>
+                                <td>5,889,321</td>
+                            </tr>
+                            <tr>
+                                <th>University Students</th>
+                                <td>2,567,354</td>
+                                <td>3,280,632</td>
+                                <td>5,360,387</td>
+                            </tr>
+                            <tr>
+                                <th>Other Students</th>
+                                <td>1,025,987</td>
+                                <td>2,230,059</td>
+                                <td>4,428,116</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                
+            </div>
+       </div> 
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                    <div class="col-6 col-sm-5 text-center">
+                    <h5>Follow Us</h5>
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href="tel:+15125431234"><i class="fa fa-phone"></i> 1-512-543-1234</a><br />
+                        <a role="button" class="btn btn-link" href="mailto:math@mathforall.com"><i class="fa fa-envelope-o"></i> math@mathforall.com</a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script> 
+        
+
+</body>
+
+</html>
